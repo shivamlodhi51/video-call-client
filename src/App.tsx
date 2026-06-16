@@ -39,17 +39,15 @@ const AppContent: React.FC = () => {
     setRoomIdState('');
   };
 
-  // 1. Force name registration before entering any screen (Login check)
-  if (!isAuthenticated) {
-    return <Login />;
-  }
-
-  // 2. If authenticated and a valid room ID exists in URL path, render Room session
+  // 1. If a valid room ID exists in URL path, force name registration (Login check) before entering
   if (roomIdState) {
+    if (!isAuthenticated) {
+      return <Login />;
+    }
     return <Room roomIdFromUrl={roomIdState} onNavigateHome={navigateHome} />;
   }
 
-  // 3. Otherwise, serve landing home dashboard
+  // 2. Otherwise, serve landing home dashboard (portfolio landing screen)
   return <Home onNavigateToRoom={navigateToRoom} />;
 };
 

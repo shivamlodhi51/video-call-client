@@ -186,7 +186,7 @@ export const Room: React.FC<RoomProps> = ({ roomIdFromUrl, onNavigateHome }) => 
         <div className="flex items-center gap-3">
           {statusBadges[connectionStatus]}
           <span className="hidden sm:inline-flex items-center gap-1.5 text-xs text-brand-400 bg-brand-500/10 border border-brand-500/20 rounded-full px-2.5 py-1 font-bold">
-            {activeCount} Peers
+            {activeCount} Active
           </span>
         </div>
       </header>

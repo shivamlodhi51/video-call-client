@@ -29,7 +29,7 @@ export const Login: React.FC = () => {
           </div>
           <h1 className="text-2xl font-bold text-white tracking-wide">Enter the Arena</h1>
           <p className="text-slate-400 text-xs mt-1.5 font-medium leading-relaxed">
-            Welcome to the ultimate real-time peer-to-peer WebRTC video calling experience.
+            Welcome to the ultimate real-time video meeting experience.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export const Login: React.FC = () => {
         </form>
 
         <div className="mt-8 border-t border-white/5 pt-6 text-center text-[10px] text-slate-500 font-medium">
-          Secure. P2P Mesh Encrypted. Zero Downloads Required.
+          Secure. Real-time Encrypted. Zero Downloads Required.
         </div>
       </div>
     </div>
